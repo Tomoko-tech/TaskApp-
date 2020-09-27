@@ -76,7 +76,7 @@ class TaskTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //セルの指定
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
-        //セルの数と配列の中身の数をとの数合わせ
+        //セルの数と配列の中身の数との数合わせ 引数 indexPath の変数 row には、セルのインデックス番号が設定
         cell.textLabel?.text = resultTaskArray[indexPath.row]
 
         return cell

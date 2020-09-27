@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         //以下で登録処理
         let content = UNMutableNotificationContent()
         content.title = "Taskアプリ";
-        content.body = "8時だよ！Task管理しませんか？";
+        content.body = "8時です。Task管理しませんか？";
         content.sound = UNNotificationSound.default
         
         

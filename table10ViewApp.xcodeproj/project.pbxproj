@@ -13,8 +13,6 @@
 		FF9B99E82511C5F10084936D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9B99E62511C5F10084936D /* Main.storyboard */; };
 		FF9B99EA2511C5F40084936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9B99E92511C5F40084936D /* Assets.xcassets */; };
 		FF9B99ED2511C5F40084936D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9B99EB2511C5F40084936D /* LaunchScreen.storyboard */; };
-		FFAB13422512463F0072EF1C /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB13412512463F0072EF1C /* MusicTableViewController.swift */; };
-		FFAB1344251246A90072EF1C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB1343251246A90072EF1C /* MusicViewController.swift */; };
 		FFC356D32511C98700B420C8 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC356D22511C98700B420C8 /* TaskTableViewController.swift */; };
 		FFC356D52511CFDC00B420C8 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC356D42511CFDC00B420C8 /* TaskViewController.swift */; };
 		FFDC53D625125A9700C2C6DD /* BGMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC53D525125A9700C2C6DD /* BGMViewController.swift */; };
@@ -31,8 +29,6 @@
 		FF9B99E92511C5F40084936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9B99EC2511C5F40084936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9B99EE2511C5F40084936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFAB13412512463F0072EF1C /* MusicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
-		FFAB1343251246A90072EF1C /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		FFC356D22511C98700B420C8 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		FFC356D42511CFDC00B420C8 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		FFDC53D525125A9700C2C6DD /* BGMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGMViewController.swift; sourceTree = "<group>"; };
@@ -75,14 +71,12 @@
 				FF9B99E42511C5F10084936D /* ViewController.swift */,
 				FFC356D22511C98700B420C8 /* TaskTableViewController.swift */,
 				FFC356D42511CFDC00B420C8 /* TaskViewController.swift */,
+				FFDC53D525125A9700C2C6DD /* BGMViewController.swift */,
 				FFFDE51F251822E40079D374 /* countDownViewController.swift */,
 				FF9B99E62511C5F10084936D /* Main.storyboard */,
 				FF9B99E92511C5F40084936D /* Assets.xcassets */,
 				FF9B99EB2511C5F40084936D /* LaunchScreen.storyboard */,
 				FF9B99EE2511C5F40084936D /* Info.plist */,
-				FFAB13412512463F0072EF1C /* MusicTableViewController.swift */,
-				FFAB1343251246A90072EF1C /* MusicViewController.swift */,
-				FFDC53D525125A9700C2C6DD /* BGMViewController.swift */,
 				FFDC53D725125BA800C2C6DD /* nekoMusic.mp3 */,
 			);
 			path = table10ViewApp;
@@ -162,12 +156,10 @@
 			files = (
 				FFFDE520251822E40079D374 /* countDownViewController.swift in Sources */,
 				FF9B99E52511C5F10084936D /* ViewController.swift in Sources */,
-				FFAB1344251246A90072EF1C /* MusicViewController.swift in Sources */,
 				FF9B99E12511C5F10084936D /* AppDelegate.swift in Sources */,
 				FFC356D52511CFDC00B420C8 /* TaskViewController.swift in Sources */,
 				FFC356D32511C98700B420C8 /* TaskTableViewController.swift in Sources */,
 				FF9B99E32511C5F10084936D /* SceneDelegate.swift in Sources */,
-				FFAB13422512463F0072EF1C /* MusicTableViewController.swift in Sources */,
 				FFDC53D625125A9700C2C6DD /* BGMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

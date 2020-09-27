@@ -98,13 +98,13 @@ class countDownViewController: UIViewController {
             Timer.scheduledTimer(timeInterval: 1,target: self, selector: #selector(countDownViewController.timerCounter),userInfo: nil, repeats: true)
             
             
-            //引数のvalueの所にpassedDays＝目標日までの日数を渡し、格納
+            //引数のvalueの所に目標日までの日数を渡し、今日の日付に目標日の日数を加算して変数に格納 toDateには目標日の日付が入る
             toDate = Calendar.current.date(byAdding: .day, value: Int(passedDays), to: Date())!
 
         }
         
 
-        //TimerFunction関数を呼び、timerLabelにカウントダウンを表示
+        //TimerFunction関数の引数にtoDate目標日の日付を渡し、timerLabelにカウントダウンを表示
         @objc func timerCounter(){
             
             timerLabel.text = TimerFunction(setDate: toDate)
@@ -112,17 +112,18 @@ class countDownViewController: UIViewController {
         }
                 
         
-        //TimerFunction関数では、引数setDateに目標日までの日数を渡し、その日数分のカウントダウンを返すようにしている
+        //TimerFunction関数では、引数setDateに目標日を渡し、その日数分のカウントダウンを返すようにしている
         func TimerFunction(setDate: Date) -> String {
             //今日の日時
             var nowDate: Date = Date()
             
             //Calendar構造体にアクセスする カレンダーのタイプにグレゴリオ暦を指定
             let calender = Calendar(identifier: .gregorian)
-            //dateComponentsは2つのDate間の日数を取得するメソッド
+            //dateComponentsは2つの日付間の日数を取得するメソッド
             let timeValue = calender.dateComponents([.day, .hour, .minute, .second], from: nowDate, to: setDate)
             
-            return String(format:"残り"+"%02d日:%02d時間:%02d分:%02d秒",timeValue.day!,timeValue.hour!,timeValue.minute!,timeValue.second!)
+            //timeValueに目標日までのに数が入っているので、それを文字列として返す
+            return  String(format:"残り"+"%02d日:%02d時間:%02d分:%02d秒",timeValue.day!,timeValue.hour!,timeValue.minute!,timeValue.second!)
         }
 
     }
